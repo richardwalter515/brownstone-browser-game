@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import LoadPage from "./pages/loadPage";
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import FloorOne from "./floors/floorOne";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <LoadPage />
+          </Route>
+          <Route exact path="/FloorOne">
+            <FloorOne />
+          </Route>
+        </Switch>
+      </div> 
+    </Router>
   );
 }
 

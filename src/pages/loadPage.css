@@ -1,0 +1,32 @@
+body {
+    background-image: url("../assets/brownstoneArt4.png");
+    background-repeat: no-repeat;
+}
+
+.centerJustification {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: center;
+}
+
+#playGameButton {
+    background-color: rgb(56, 109, 3);
+    color: white;
+    font-size: larger;
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    margin: 25px;
+}
+
+#leaderboardButton {
+    background-color: rgb(231, 197, 0);
+    color: white;
+    font-size: larger;
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    margin: 25px;
+}
